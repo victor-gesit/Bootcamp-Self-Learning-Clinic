@@ -24,6 +24,10 @@
       it("should return `Arithmetic` for [15, 10, 5, 0, -5, -10]", function() {
         expect(aritGeo([15, 10, 5, 0, -5, -10])).toEqual('Arithmetic');
       });
+      
+      it("should return 'Arithmetic' for [-20,-14,-8,-2,4", function(){
+        expect(aritGeo([-20,-14,-8,-2,4])).toEqual('Arithmetic');
+      });
     });
 
     describe("Case for a geometric sequence", function() {
