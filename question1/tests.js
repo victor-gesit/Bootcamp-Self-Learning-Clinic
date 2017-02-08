@@ -23,6 +23,9 @@
       it('should return [-2,5] for [5, 0, -1, -2]', function(){
         expect(findMinMax([5,0,-1,-2])).toEqual([-2,5])
       });
+      it('should return [-5.5,5.5] for [-3.3,3.3,-4.4,4.4,-5.5,5.5]', function(){
+        expect(findMinMax([-3.3,3.3,-4.4,4.4,-5.5,5.5])).toEqual([-5.5,5.5]);
+      });
 
     });
 
@@ -36,6 +39,10 @@
       });
       it('should return [0] for [0,0,0,0,0]', function(){
         expect(findMinMax([0,0,0,0,0])).toEqual([0])
+      });
+      it('should return [2.5] for [2.5,2.5,2.5,2.5]', function(){
+
+        expect(findMinMax([2.5,2.5,2.5,2.5,2.5])).toEqual([2.5])
       });
 
     });
