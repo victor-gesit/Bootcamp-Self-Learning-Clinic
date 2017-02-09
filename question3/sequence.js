@@ -2,7 +2,7 @@ module.exports = {
  aritGeo: function(data) {
  	var AP = true;
  	var GP = true;
- 	if(data.length === 0 || data.length === 1){
+ 	if(data.length <=2){
  		return 0;
  	}
 

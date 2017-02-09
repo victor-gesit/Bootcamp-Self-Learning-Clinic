@@ -13,7 +13,12 @@ var aritGeo = arGeo.aritGeo;
 
     });
     describe("Case for a single-element array or 2-element array", function(){
-      expect(aritGeo([1])).toEqual(0);
+      it("should return 0 for a single-element array", function(){
+        expect(aritGeo([1])).toEqual(0);
+      });
+      it("should return 0 for a double-element array", function(){
+        expect(aritGeo([1,5])).toEqual(0);
+      });
     })
 
     describe("Case for an arithmetic sequence", function() {
