@@ -1,3 +1,6 @@
+var fMinMax = require("./minmax");
+var findMinMax = fMinMax.findMinMax;
+
 (function() {
   'use strict';
 

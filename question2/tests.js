@@ -1,3 +1,5 @@
+var fb = require("./fizzbuzz");
+var fizzBuzz = fb.fizzBuzz;
 describe("Fizz Buzz tests ", function() {
 
   it("should return `Fizz` for number divisible by 3", function() {
