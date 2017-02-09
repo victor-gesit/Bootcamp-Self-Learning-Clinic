@@ -12,6 +12,9 @@ var aritGeo = arGeo.aritGeo;
       });
 
     });
+    describe("Case for a single-element array", function(){
+      expect(aritGeo([1])).toEqual(0);
+    })
 
     describe("Case for an arithmetic sequence", function() {
 

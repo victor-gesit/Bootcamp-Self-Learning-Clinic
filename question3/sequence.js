@@ -15,12 +15,19 @@ module.exports = {
  		}
  	}
 
-
+ 	var commonRatio = data[0]/data[1];
+ 	for(var i = 0; i < data.length-1; i++){
+ 		var ratio2 = data[i]/data[i+1];
+ 		if(commonRatio != ratio2){
+ 			GP = false;
+ 			break;
+ 		}
+ 	}
 
  	if(AP){
  		return "Arithmetic";
  	}
- 	if(AP){
+ 	if(GP){
  		return "Geometric";
  	}
  }
