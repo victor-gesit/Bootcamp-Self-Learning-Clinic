@@ -12,7 +12,7 @@ var aritGeo = arGeo.aritGeo;
       });
 
     });
-    describe("Case for a single-element array", function(){
+    describe("Case for a single-element array or 2-element array", function(){
       expect(aritGeo([1])).toEqual(0);
     })
 

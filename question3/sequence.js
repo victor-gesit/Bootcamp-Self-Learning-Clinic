@@ -26,9 +26,10 @@ module.exports = {
 
  	if(AP){
  		return "Arithmetic";
- 	}
- 	if(GP){
+ 	} else if(GP){
  		return "Geometric";
+ 	} else {
+ 		return -1;
  	}
  }
 }
